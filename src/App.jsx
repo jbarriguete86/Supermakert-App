@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
 import Home from './pages/Home'
 import List from './pages/List'
 import MainLayout from './components/MainLayout'
-import './App.css'
 
 function App() {
 

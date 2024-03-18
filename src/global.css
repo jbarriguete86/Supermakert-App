@@ -17,6 +17,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
+
 img,
 picture,
 video,
@@ -54,6 +55,23 @@ h6 {
   --cadet-gray: hsla(180, 12%, 55%, 1);
   --paynes-gray: hsla(200, 32%, 40%, 1);
   --safety-orange: hsla(28, 99%, 50%, 1);
+  --creamy-white: #f4f3f3;
+  --vibrant-green: #30f92f;
+  --deep-forest: #14241f;
+  --bold-red: #fa252d;
+  --royal-blue: #3227fe;
+  --ivory: #fdf9ee;
+  --dark-jungle-green: #091916;
+  --cherry-red: #fd101e;
+  --neon-green: #1ffe0f;
+  --neon-blue: #1e16fe;
+  --light-green: #31fcba;
+  --pastel-pink: #ec928e;
+  --aqua-marine: #e6fefe;
+  --lavender: #f4e5fd;
+  --soft-purple: #8566ff;
+  --light-olive: #c1f957;
+  --sage-green: #606c54;
 }
 
 /* Type Scale */
@@ -61,6 +79,7 @@ h6 {
 html {
   font-size: 87.5%;
 }
+
 body {
   --text-size-80: 0.694rem;
   --text-size-90: 0.833rem;
@@ -71,11 +90,11 @@ body {
   --text-size-500: 2.074rem;
   --text-size-600: 2.488rem;
   --text-size-700: 2.986rem;
-  font-family: "Darker Grotesque", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   line-height: 1.6;
   color: #222222;
-  background: #f7f7f8;
+  background: var(--aqua-marine);
 }
 h1,
 .h1,

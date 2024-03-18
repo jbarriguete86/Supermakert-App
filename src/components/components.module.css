@@ -1,0 +1,44 @@
+/* HEADER */
+
+.logoContainer,
+.heroContainer,
+.navContainer{
+    display: flex;
+}
+
+
+
+.logoContainer img{
+    width: 15%;
+    border-radius: 20px;;
+    object-fit: scale-down;
+}
+
+.logoContainer h1{
+    font-size: var(--text-size-100);
+    align-self: center;
+    justify-self: center;
+    margin: 0 0 0 .3em;
+
+}
+
+.heroContainer{
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: black double;
+    padding: 1em;
+    background-color: var(--lavender);
+    
+}
+
+.navContainer{
+    width: 100%;
+    justify-content: space-between;
+    font-size: var(--text-size-300);
+}
+
+.navContainer a{
+    color: rgba(201, 125, 39, 0.952);
+    text-decoration: none;
+}
+

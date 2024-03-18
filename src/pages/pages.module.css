@@ -1,0 +1,21 @@
+/* HOME */
+
+.homeContainer{
+    display: flex;
+    flex-direction: column;
+    margin: 1em 2em;
+}
+
+.mainBtn{
+    margin-top: 1em;
+    border-radius: 4%;
+    color:var(--safety-orange);
+    text-decoration: none;
+    font-size: var(--text-size-500);
+    text-align: center;
+
+}
+
+.mainBtn span{
+    margin-right: 0.3em;
+}
