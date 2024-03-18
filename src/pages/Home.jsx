@@ -4,10 +4,6 @@ import Styles from "./pages.module.css"
 
 export default function Home(){
 
-    function handleClick(){
-        console.log(searchParams)
-    }
-
 
     return (
     <div className={Styles.homeContainer}>
