@@ -90,11 +90,11 @@ body {
   --text-size-500: 2.074rem;
   --text-size-600: 2.488rem;
   --text-size-700: 2.986rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-weight: 500;
   line-height: 1.6;
   color: #222222;
-  background: var(--aqua-marine);
+  background-color: #EEF0F4;
 }
 h1,
 .h1,

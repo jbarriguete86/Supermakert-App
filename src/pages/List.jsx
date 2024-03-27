@@ -1,14 +1,31 @@
 import React from "react"
+import Styles from "./pages.module.css"
 
-export default function List({items}){
-    const {fruits, bread, vegetables, dairyProducts, meat, miscellaneous, pet, other, id} = items
-    
-    function getElements(categ){
-        return categ.map((element)=><p>{element}</p>)
-    }
+export default function List(){
+const [formData, setFormData]=React.useState({
+    listItem:""
+})
 
-    return (<>
-    {getElements(fruits)}
+
+ function handleChange(e){
+    setFormData(prevFormData=>({
+        ...prevFormData,
+        listItem: e.target.value
+    }))
+
+}
+
+    return (
+    <form className={Styles.inputContainer}>
+        <input 
+            type="text"
+            id="input-field"
+            placeholder="bread"
+            name="listItem"
+            value={formData.listItem}
+            onChange={handleChange}
+        />
+        <button>Add to cart</button>
     
-    </>)
+    </form>)
 }

@@ -23,7 +23,7 @@ function App() {
     <Routes>
       <Route path="/" element={<MainLayout/>}>
         <Route index element={<Home/>}/>
-        <Route path="list" element={<List items={items}/>} />
+        <Route path="list" element={<List/>} />
       </Route>
     </Routes>
     </BrowserRouter>
