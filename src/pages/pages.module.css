@@ -34,8 +34,8 @@
 }
 
 input,
-button{
-    font-family: 'Rubik', sans-serif;
+.submitBtn{
+    /* font-family: 'Rubik', sans-serif; */
     padding: 15px;
     border: 0;
     border-radius: 8px;
@@ -48,7 +48,49 @@ input {
     margin: 10px 0;
 }
 
-button {
+.submitBtn {
     color: #FDFDFD;
-    background-color: #AC485A;
+    background-color: var(--main-button);
+}
+
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+}
+
+.filterContainer{
+    min-width: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+.filterOption{
+    background-color: antiquewhite;
+    color: black;
+    font-weight: bolder;
+    padding: 1em;
+}
+
+.submitBtn:hover,
+.filterOption:hover{
+ cursor: pointer;
+}
+
+.submitBtn:hover{
+    background-color: var(--light-green);
+    color:#432000;
+}
+
+.filterOption:hover{
+    border: 1px solid red;
+    border-radius: 8px;;
+    color:#432000;
 }

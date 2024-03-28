@@ -42,3 +42,101 @@
     text-decoration: none;
 }
 
+/* CARD COMPONENT */
+.card{
+    min-width: 100px;
+    width: 10%;
+    height: 40px;
+    text-align: center;
+    padding: 7px;
+    border: 1px solid var(--deep-forest);
+    border-radius: 5px;
+    font-weight: bold;
+    color: black;
+}
+
+.fruitAndVegetables{
+    background-color: var(--light-olive);
+}
+
+.bread{
+    background-color: var(--pastel-pink);
+}
+
+.meat{
+    background-color: var(--cherry-red);
+}
+
+.pet{
+    background-color: var(--paynes-gray);
+}
+
+.misc{
+    background-color: var(--soft-purple);
+}
+
+.dairy{
+    background-color: var(--creamy-white);
+}
+
+
+/* CATEGORY SELECTION CARD COMPONENT */
+
+.categoriesContainer{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    background-color: white;
+    
+}
+
+.categoriesOptions{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+.categoryOption{
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px black solid;
+    background-color: var(--light-green);
+    font-weight: bolder;
+}
+
+.closeBtn{
+    align-self: flex-end;
+}
+
+.categoryBtn{
+    padding: 15px;
+    border: 0;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #FDFDFD;
+    background-color: var(--main-button);
+}
+
+.closeBtn:hover,
+.categoryBtn:hover,
+.categoryOption{
+    cursor: pointer;
+}
+
+.categoryBtn:hover{
+    background-color: var(--light-green);
+    color:#432000;
+}
+
+
+.selected{
+    background-color: var(--light-green);
+    color:#432000;
+}
