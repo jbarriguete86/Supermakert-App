@@ -1,8 +1,9 @@
 import React from "react"
 import Styles from "./pages.module.css"
-import data from "../configuration/configuration"
+import shoppingListInDB from "../configuration/configuration"
 import Card from "../components/Card"
 import CategoryCard from "../components/CategoryCard"
+import {push, onValue, remove } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
 
 export default function List(){
 const [formData, setFormData]=React.useState([])
@@ -11,12 +12,14 @@ const [inputData, setInputData]= React.useState({
    id:"",
    category:"" 
 })
+
+console.log(formData)
 const [category, setCategory] = React.useState(false)
 const [filter, setFilter] = React.useState("")
 const categories= ["fruitAndVegetables", "bread", "meat", "misc", "pet", "dairy"]
 
 React.useEffect(()=>{
-    setFormData(data)
+    setFormData(shoppingListInDB)
 },[])
 
 React.useEffect(()=>{
