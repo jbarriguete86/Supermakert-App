@@ -16,7 +16,11 @@
     gap: 24px;
 }
 
-
+.formContainer > input,
+.formContainer > select{
+    border: none;
+    background-color: var(--lavender);
+}
 .listContainer{
     justify-content: center;
     align-items: center;
