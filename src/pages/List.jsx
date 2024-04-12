@@ -21,7 +21,7 @@ export default function List(){
 
 
 
-    console.log(formData)
+
 
     function handleChange(event) {
         const {name, value, type, checked} = event.target
