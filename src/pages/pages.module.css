@@ -19,8 +19,19 @@
 .formContainer > input,
 .formContainer > select{
     border: none;
-    background-color: var(--lavender);
+    background-color: var(--aqua-marine);
 }
+
+.formContainer > select{
+    margin: 10px 0 20px 0;
+    font-weight: bold;;
+}
+
+.formContainer > button{
+    color:azure;
+    background-color: brown;
+}
+
 .listContainer{
     justify-content: center;
     align-items: center;
